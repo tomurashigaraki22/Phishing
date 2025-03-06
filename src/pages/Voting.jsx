@@ -32,7 +32,7 @@ const VotingPage = () => {
     useEffect(() => {
         const interval = setInterval(() => {
           setVotes((prevVotes) => getNextVoteCount(prevVotes));
-        }, 5000); // Update every 5 seconds (adjust as needed)
+        }, 5000); // Update every 5 seconds  (adjust as needed)
     
         return () => clearInterval(interval); // Cleanup interval on component unmount
       }, []);
